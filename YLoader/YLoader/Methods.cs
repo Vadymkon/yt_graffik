@@ -1,4 +1,4 @@
-﻿using BrightIdeasSoftware;
+using BrightIdeasSoftware;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -162,7 +162,7 @@ namespace YLoader
             objectListView1.SetObjects(videos.Where(x => x.IsHaveCEOfile)); //reset all elements
         }
 
-        internal void UpdateVideos(List<VideoFile> vf)
+        internal void UpdateVideos(List<VideoFile> vf, bool Shorts = false)
         {
             Invoke((Action)(
                () =>
@@ -171,11 +171,45 @@ namespace YLoader
                    label3.Visible = true;
                    egoldsProgressBar1.Value = 0;
                    egoldsProgressBar1.ValueMaximum = vf.Count;
+
+
+                   DateTime dateTimeCURR = new DateTime(), 
+                            dateTimeBEF = new DateTime(); //dateTime buffers
+                   int againer = 0; //
+
                    vf.ForEach(x =>
                    {
-                       yt.UpdateVideo(x);
+                       int hours = 13;
+                       if (Shorts)
+                       {
+                           //13 - 16 - 19 (for shorts)
+                           dateTimeCURR = x.PublishedDate;
+                           if (dateTimeCURR == dateTimeBEF) ++againer;
+                           else againer = 0;
+                           switch (againer)
+                           {
+                               case 0:
+                                   hours = 13;
+                                   break;
+                               case 1:
+                                   hours = 16;
+                                   break;
+                               case 2:
+                                   hours = 19;
+                                   break;
+                               default:
+                                   hours = 13;
+                                   break;
+                           }
+                       }
+
+                       //stahdart update
+                       yt.UpdateVideo(x,hours);
                        ++egoldsProgressBar1.Value;
                        label3.Text = $"Загружено {egoldsProgressBar1.Value}";
+
+                       if (Shorts)
+                       dateTimeBEF = dateTimeCURR;
                    });
                    new Form2(this).Show();
                }));

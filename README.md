@@ -1,4 +1,7 @@
 # YT_Graffik
+DONAT - Monobank: 5375 4112 0321 5921
+https://send.monobank.ua/jar/9GZAtALzxd
+
 (REPORT/MAKING OFF - https://drive.google.com/file/d/13SX4JInPgLC2PJRDDpPS_8VNEAcP6FBn/view?usp=sharing )
 C#, .NET, LINQ, SMTP, OAuth 2.0, YouTube API (mb some other)
 

@@ -1,0 +1,10 @@
+D:\vadymkon\Kaiters\TRY\ObjectListViewDemo\ObjectListView\bin\Release\ObjectListView.XML
+D:\vadymkon\Kaiters\TRY\ObjectListViewDemo\ObjectListView\bin\Release\ObjectListView.dll
+D:\vadymkon\Kaiters\TRY\ObjectListViewDemo\ObjectListView\bin\Release\ObjectListView.pdb
+D:\vadymkon\Kaiters\TRY\ObjectListViewDemo\ObjectListView\obj\Release\ObjectListView2012.csproj.AssemblyReference.cache
+D:\vadymkon\Kaiters\TRY\ObjectListViewDemo\ObjectListView\obj\Release\BrightIdeasSoftware.Properties.Resources.resources
+D:\vadymkon\Kaiters\TRY\ObjectListViewDemo\ObjectListView\obj\Release\BrightIdeasSoftware.ColumnSelectionForm.resources
+D:\vadymkon\Kaiters\TRY\ObjectListViewDemo\ObjectListView\obj\Release\ObjectListView2012.csproj.GenerateResource.cache
+D:\vadymkon\Kaiters\TRY\ObjectListViewDemo\ObjectListView\obj\Release\ObjectListView2012.csproj.CoreCompileInputs.cache
+D:\vadymkon\Kaiters\TRY\ObjectListViewDemo\ObjectListView\obj\Release\ObjectListView.dll
+D:\vadymkon\Kaiters\TRY\ObjectListViewDemo\ObjectListView\obj\Release\ObjectListView.pdb
